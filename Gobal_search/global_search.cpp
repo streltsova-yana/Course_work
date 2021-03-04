@@ -1,13 +1,14 @@
 #include <map>
 #include <cmath>
+#include <iostream>
 #include "global_search.h"
 
-double func1(double x)
+double squaring(double x)
 {
 	return x * x;
 }
 
-double func2(double x)
+double sinus(double x)
 {
 	return sin(x);
 }
@@ -23,7 +24,7 @@ void global_search(double (*fcnPtr)(double), double a, double b, int kmax, doubl
 		double M = 0;
 		for (auto it1 = x.begin(), it2 = ++x.begin(); it2 != x.end(); it1++, it2++)
 			M = fmax(M, abs((it2->second - it1->second) / (it2->first - it1->first)));
-		double r = 1.5;
+		double r = 100;
 		double m = r * M;
 		if (M == 0)
 			m = 1;
@@ -45,9 +46,11 @@ void global_search(double (*fcnPtr)(double), double a, double b, int kmax, doubl
 	}
 	xmin = a;
 	ymin = x[a];
-	for (const auto& i : x)
+	for (const auto& i : x) {
 		if (ymin > i.second) {
 			ymin = i.second;
 			xmin = i.first;
 		}
+		std::cout << "x = " << i.first << " y = " << i.second << std::endl;
+	}
 };

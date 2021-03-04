@@ -6,13 +6,15 @@ using namespace std;
 
 int main()
 {
-	int kmax = 1000;
-	double precision = 0.1;
+	int kmax = 100;
+	double precision = 1e-5;
 	double xmin = numeric_limits<double>::max(), ymin = numeric_limits<double>::max();
-	double a = -73, b = 45.5;
+	double a = -1, b = 2;
+	cout << endl;
 	try {
-		global_search(func1, a, b, kmax, precision, xmin, ymin);
-		cout << "Global_min_func1: (" << xmin << ", " << ymin << ")" << endl;
+		global_search(squaring, a, b, kmax, precision, xmin, ymin);
+		cout << "Global_min_squaring: (" << xmin << ", " << ymin
+			 << ") on the segment [" << a << ", " << b << "]" << endl;
 	}
 	catch (const char* message) {
 		cout << message;
@@ -20,8 +22,9 @@ int main()
 	a = 1.2;
 	b = 3.14;
 	try {
-		global_search(func2, a, b, kmax, precision, xmin, ymin);
-		cout << "Global_min_func2: (" << xmin << ", " << ymin << ")" << endl;
+		global_search(sinus, a, b, kmax, precision, xmin, ymin);
+		cout << "Global_min_sinus: (" << xmin << ", " << ymin
+			 << ")" << ") on the segment [" << a << ", " << b << "]" << endl;
 	}
 	catch (const char* message) {
 		cout << message;
@@ -29,10 +32,11 @@ int main()
 	a = 1.2;
 	b = 3.14;
 	try {
-		global_search(func2, b, a, kmax, precision, xmin, ymin);
-		cout << "Global_min_func2: (" << xmin << ", " << ymin << ")" << endl;
+		global_search(sinus, b, a, kmax, precision, xmin, ymin);
+		cout << "Global_min_sinus: (" << xmin << ", " << ymin
+			 << ")" << ") on the segment [" << a << ", " << b << "]" << endl;
 	}
 	catch (const char* message) {
-		cout << message;
+		cout << message << endl;
 	}
 }
