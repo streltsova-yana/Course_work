@@ -1,19 +1,9 @@
 #include <map>
 #include <cmath>
-#include <iostream>
+
 #include "global_search.h"
 
-double squaring(double x)
-{
-	return x * x;
-}
-
-double sinus(double x)
-{
-	return sin(x);
-}
-
-void global_search(double (*fcnPtr)(double), double a, double b, int kmax, double precision, double &xmin, double &ymin)
+void global_search(double (*fcnPtr)(double), double a, double b, int kmax, double precision, double& xmin, double& ymin)
 {
 	if (a > b)
 		throw "Incorrect bounds: a must be less than b";
@@ -51,6 +41,5 @@ void global_search(double (*fcnPtr)(double), double a, double b, int kmax, doubl
 			ymin = i.second;
 			xmin = i.first;
 		}
-		std::cout << "x = " << i.first << " y = " << i.second << std::endl;
 	}
-};
+}

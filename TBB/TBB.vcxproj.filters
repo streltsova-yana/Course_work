@@ -15,14 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="hansen_functions.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="global_search.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="hansen_functions.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment_split.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
     <ClInclude Include="global_search.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
