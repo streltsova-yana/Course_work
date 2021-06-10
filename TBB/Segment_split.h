@@ -26,7 +26,7 @@ public:
 
     void operator()(const blocked_range<double>& r) {
         double begin = r.begin(), end = r.end();
-        global_search(fcnPtr, begin, end, kmax, precision, xmin, ymin);
+        sequential_global_search(fcnPtr, begin, end, kmax, precision, xmin, ymin);
     };
 
     void join(const Segment_split& tmp) {

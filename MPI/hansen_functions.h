@@ -49,12 +49,11 @@ double hpfunc17(double x);
 double hpfunc18(double x);
 double hpfunc19(double x);
 double hpfunc20(double x);
-void matrix_mult();
 
 static double(*pfn[])(double x) = { hfunc1, hfunc2, hfunc3, hfunc4, hfunc5, hfunc6, hfunc7, hfunc8, hfunc9, hfunc10,
                                     hfunc11, hfunc12, hfunc13, hfunc14, hfunc15, hfunc16, hfunc17, hfunc18, hfunc19, hfunc20,
                                     hpfunc1, hpfunc2, hpfunc3, hpfunc4, hpfunc5, hpfunc6, hpfunc7, hpfunc8, hpfunc9, hpfunc10,
-                                    hpfunc11, hpfunc12, hpfunc13, hpfunc14, hpfunc15, hpfunc16, hpfunc17, hpfunc18, hpfunc19, hpfunc20};
+                                    hpfunc11, hpfunc12, hpfunc13, hpfunc14, hpfunc15, hpfunc16, hpfunc17, hpfunc18, hpfunc19, hpfunc20 };
 
 static std::vector<std::vector<double> > res = { {10},{5.14575},{-0.49139, -6.77458, 5.79179},{2.868},{0.966086},
 {0.679578},{5.199776},{-0.80032, -7.08351, 5.48286},{17.0392},{7.97867},
@@ -63,4 +62,3 @@ static std::vector<std::vector<double> > res = { {10},{5.14575},{-0.49139, -6.77
 
 
 #endif  
-

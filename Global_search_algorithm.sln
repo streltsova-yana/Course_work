@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TBB", "TBB\TBB.vcxproj", "{DBE5F2E5-4003-4227-917A-C0D98135EF4F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MPI", "MPI\MPI.vcxproj", "{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{DBE5F2E5-4003-4227-917A-C0D98135EF4F}.Release|x64.Build.0 = Release|x64
 		{DBE5F2E5-4003-4227-917A-C0D98135EF4F}.Release|x86.ActiveCfg = Release|Win32
 		{DBE5F2E5-4003-4227-917A-C0D98135EF4F}.Release|x86.Build.0 = Release|Win32
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Debug|x64.ActiveCfg = Debug|x64
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Debug|x64.Build.0 = Debug|x64
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Debug|x86.ActiveCfg = Debug|Win32
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Debug|x86.Build.0 = Debug|Win32
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Release|x64.ActiveCfg = Release|x64
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Release|x64.Build.0 = Release|x64
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Release|x86.ActiveCfg = Release|Win32
+		{B8B980E6-2DF3-4BCA-8D7C-02012E26640F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
